@@ -4,6 +4,13 @@ live link --- https://chucks-kitchen.netlify.app/
 **Developer handing over:** Abdulrahman (original implementation)  
 **Tech handover note:** This is a Next.js 14+ App Router food delivery landing/menu site for Nigerian cuisine. Focus is on clean, responsive UI with reusable components. Auth pages have a split-screen design, public pages use a fixed navbar.
 
+## available pages 
+* Onboarding page (´/´)
+* signin page (´/signin´)
+* signup page(´/signup´)
+* Home(´/home´)
+* Explore page (´/explore´)
+
 ## 1. Project Overview
 
 **What we built**  
