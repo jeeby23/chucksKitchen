@@ -17,17 +17,13 @@ export default function MenuDropdown() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    // ⚠️ No z-index or overflow on this section — let it be fully natural flow
     <section className="bg-white py-12 md:py-8">
       <BaseLayout>
-        {/* Outer wrapper — no overflow, no relative needed for in-flow content */}
         <div className="w-full">
-
-          {/* Trigger */}
           <button
             type="button"
             onClick={() => {
-              console.log('clicked, isOpen will be:', !isOpen) // debug
+              console.log('clicked, isOpen will be:', !isOpen)
               setIsOpen((prev) => !prev)
             }}
             className="w-full flex items-center justify-between px-6 py-4 bg-white border border-gray-300 rounded-lg text-left text-lg font-medium text-gray-900 hover:bg-gray-50 shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500 cursor-pointer"
@@ -40,18 +36,15 @@ export default function MenuDropdown() {
             />
           </button>
 
-          {/* Panel — completely in normal document flow, nothing can clip it */}
           <div
             className={`w-full bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden transition-all duration-300 ${
               isOpen ? 'max-h-[600px] mt-1 opacity-100' : 'max-h-0 opacity-0'
             }`}
           >
-            {/* Heading */}
             <div className="px-6 py-4 border-b border-gray-100">
               <span className="text-base font-bold text-gray-900">Menu Categories</span>
             </div>
 
-            {/* Items */}
             <ul>
               {menuItems.map((item) => (
                 <li key={item.href}>
@@ -70,7 +63,6 @@ export default function MenuDropdown() {
               ))}
             </ul>
           </div>
-
         </div>
       </BaseLayout>
     </section>
