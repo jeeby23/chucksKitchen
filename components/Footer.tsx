@@ -31,7 +31,7 @@ export default function Footer() {
             <h3 className="text-xl font-semibold">Quick Links</h3>
             <ul className="space-y-4 text-gray-300">
               <li>
-                <Link href="/" className="hover:text-[#FF7A18] transition">
+                <Link href="/home" className="hover:text-[#FF7A18] transition">
                   Home
                 </Link>
               </li>

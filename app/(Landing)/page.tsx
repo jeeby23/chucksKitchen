@@ -1,4 +1,5 @@
-import HomePageContent from "./home/page";
+import HomePageContent from "../page";
+
 
 export default function RootPage() {
   return <HomePageContent />;
